@@ -1,9 +1,4 @@
----
-layout: page
-title: About
----
-
-<div class="page">
+I"|<div class="page">
 <p class="message">
   Acá iria la descripción del proyecto
 </p>
@@ -12,3 +7,4 @@ title: About
 (o cualquier otra cosa)
 
 </div>
+:ET
