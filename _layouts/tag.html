@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="page">
+<h1>#{{page.tag}}</h1>
+    <ul>
+      {% for post in site.posts %}
+      {% if post.tags contains page.tag %}
+      <li><a class="post" href="{{ post.url }}">
+
+        {% if post.title == "untitled" %}
+        {{ post.url | slice: 11, 20}}
+        {% else %} 
+        {{ post.title }}
+        {% endif %}
+      
+      
+      </a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time></li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+	
+</div>
+<body class="theme-base-08">
+  ...
+</body>
